@@ -1,0 +1,27 @@
+.conatiner{
+    height: 700px;
+    border: 1px solid red;
+    background-color: yellow;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1px;
+}
+.box{
+    border: 1px solid green;
+    background-color: aqua;
+    /* height: 100px;
+    width: 100px; */
+}
+#box1{
+    /* grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-row-start: 1;
+    grid-row-end: 3; */
+
+        /* grid area ka use kar ke column waise and row waise set kar sakte h  */
+         /* grid area me 1st value hota h row-start,2nd value column-start,3rd value hota row-end ka ,4th value hota h column-end ka   */
+
+    grid-area: 1/1/3/4;
+}
